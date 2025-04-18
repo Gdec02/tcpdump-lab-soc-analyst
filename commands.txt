@@ -1,0 +1,12 @@
+# Commands Used in SOC Packet Capture Lab
+
+## On Metasploitable (Victim)
+Capture all packets from the attacker:
+tcpdump -i eth0 host 192.168.56.101
+
+Save captured packets to a file (optional):
+tcpdump -i eth0 -w attack_traffic.pcap
+
+## On Kali (Attacker)
+Run a scan to simulate an attack:
+nmap -sS -sV 192.168.56.102
